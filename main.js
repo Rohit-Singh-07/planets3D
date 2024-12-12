@@ -84,7 +84,7 @@ camera.position.z = 9;
 
 const spheres = new THREE.Group();
 
-const starTexture = new THREE.TextureLoader().load("./stars.jpg");
+const starTexture = new THREE.TextureLoader().load("/stars.jpg");
 starTexture.colorSpace = THREE.SRGBColorSpace;
 const starGeometry = new THREE.SphereGeometry(50, 32, 32);
 const starMaterial = new THREE.MeshStandardMaterial({ map: starTexture, side: THREE.BackSide });
@@ -95,10 +95,10 @@ const radius = 1.5;
 const orbitRadius = 6.9;
 const color = [0x0000ff, 0x00ff00, 0xff0000, 0xffff00];
 const textures = [
-  "./csilla/color.png",
-  "./earth/map.jpg",
-  "./venus/map.jpg",
-  "./volcanic/color.png",
+  "/csilla/color.png",
+  "/earth/map.jpg",
+  "/venus/map.jpg",
+  "/volcanic/color.png",
 ];
 
 // Create ambient light for base illumination
