@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="w-full h-full overflow-hidden">
+      <div class="w-full h-screen absolute top-0 left-0 py-4">
+        <nav
+          class="flex justify-between items-center gap-5 text-white sm:text-sm text-xs px-5"
+        >
+          <h1 class="sm:text-base text-sm">Planets</h1>
+
+          <div class="flex gap-5">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+
+        <div
+          class="absolute top-[12%] translate-x-[-50%] left-[50%] text-white flex flex-col gap-2 items-center"
+        >
+          <div class="items-center sm:h-[8.5rem] h-[5rem] flex flex-col gap-1 overflow-hidden text-center">
+            <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Earth</h1>
+            <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Venus</h1>
+            <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Volcanic</h1>
+            <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Csilla</h1>
+          </div>
+          <p class="sm:text-sm text-xs text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          <div
+            class="w-full h-[1px] bg-gradient-to-r from-transparent via-white to-transparent mt-2"
+          ></div>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <canvas id="canvas" class="h-screen overflow-hidden"></canvas>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
