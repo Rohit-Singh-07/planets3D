@@ -511,9 +511,6 @@ video {
 .top-0 {
   top: 0px;
 }
-.top-\[15\%\] {
-  top: 15%;
-}
 .top-\[12\%\] {
   top: 12%;
 }
@@ -526,41 +523,14 @@ video {
 .h-\[1px\] {
   height: 1px;
 }
+.h-\[5rem\] {
+  height: 5rem;
+}
 .h-full {
   height: 100%;
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[\] {
-  height: ;
-}
-.h-\[100px\] {
-  height: 100px;
-}
-.h-28 {
-  height: 7rem;
-}
-.h-8 {
-  height: 2rem;
-}
-.h-9 {
-  height: 2.25rem;
-}
-.h-7 {
-  height: 1.75rem;
-}
-.h-36 {
-  height: 9rem;
-}
-.h-32 {
-  height: 8rem;
-}
-.h-\[8\.5rem\] {
-  height: 8.5rem;
-}
-.h-\[5rem\] {
-  height: 5rem;
 }
 .w-full {
   width: 100%;
@@ -575,8 +545,14 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -584,11 +560,12 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
-.gap-1 {
-  gap: 0.25rem;
-}
 .overflow-hidden {
   overflow: hidden;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -616,41 +593,16 @@ video {
 .text-center {
   text-align: center;
 }
-.font-\[\] {
-  font-family: ;
-}
-.font-\[\"Merienda\"\] {
-  font-family: "Merienda";
-}
-.font-\[\'Merienda\'\] {
-  font-family: 'Merienda';
-}
 .font-\[\'Tinos\'\] {
   font-family: 'Tinos';
-}
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -668,6 +620,12 @@ body {
   background: black;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
 @media (min-width: 640px) {
 
   .sm\:h-\[8\.5rem\] {
@@ -679,13 +637,13 @@ body {
     line-height: 1;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }

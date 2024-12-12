@@ -6,9 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="w-full h-full overflow-hidden">
@@ -28,10 +31,14 @@
         <div
           class="absolute top-[12%] translate-x-[-50%] left-[50%] text-white flex flex-col gap-2 items-center"
         >
-          <div class="items-center sm:h-[8.5rem] h-[5rem] flex flex-col gap-1 overflow-hidden text-center">
+          <div
+            class="items-center sm:h-[8.5rem] h-[5rem] flex flex-col gap-1 overflow-hidden text-center"
+          >
             <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Earth</h1>
             <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Venus</h1>
-            <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Volcanic</h1>
+            <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">
+              Volcanic
+            </h1>
             <h1 class="sm:text-9xl text-7xl font-['Tinos'] heading">Csilla</h1>
           </div>
           <p class="sm:text-sm text-xs text-center">
@@ -41,6 +48,11 @@
             class="w-full h-[1px] bg-gradient-to-r from-transparent via-white to-transparent mt-2"
           ></div>
         </div>
+      </div>
+      <div
+        class="w-full h-full absolute top-0 left-0 bg-black flex justify-center items-center text-white loader"
+      >
+        <h1>loading..</h1>
       </div>
       <div class="w-full h-full">
         <canvas id="canvas" class="h-screen overflow-hidden"></canvas>
